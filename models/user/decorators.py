@@ -1,6 +1,7 @@
 import functools
 from typing import Callable
-from flask import session, flash, redirect, url_for, request, current_app
+
+from flask import session, flash, redirect, url_for, current_app
 
 
 def requires_login(f: callable) -> Callable:
