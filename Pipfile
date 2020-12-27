@@ -1,0 +1,20 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+flask = "*"
+beautifulsoup4 = "*"
+requests = "*"
+pymongo = "*"
+passlib = "*"
+python-dotenv = "*"
+uWSGI = "*"
+jinja2 = "*"
+urllib3 = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"
