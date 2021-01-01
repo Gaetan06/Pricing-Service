@@ -4,17 +4,22 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-flask = "*"
+Flask = "*"
 beautifulsoup4 = "*"
 requests = "*"
 pymongo = "*"
 passlib = "*"
+uWSGI = "*"
 python-dotenv = "*"
 Jinja2 = ">=2.10.1"
 urllib3 = ">=1.24.2"
-uWSGI = "*"
 
 [dev-packages]
+pylint = "*"
+black = "*"
 
 [requires]
 python_version = "3.9"
+
+[pipenv]
+allow_prereleases = true
