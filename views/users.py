@@ -15,7 +15,7 @@ def register_user():
             User.register_user(user_name, email, password)
             session['email'] = email
             session['user_name'] = user_name
-            return email
+            return render_template('home.html')
         except UserErrors.UserError as e:
             return e.message
 
@@ -32,7 +32,7 @@ def login_user():
                 user = User.find_one_by('email', email)
                 session['email'] = user.email
                 session['name'] = user.name
-                return email, user.name
+                return render_template('home.html')
         except UserErrors.UserError as e:
             return e.message
 

@@ -10,7 +10,9 @@ requests = "*"
 pymongo = "*"
 passlib = "*"
 python-dotenv = "*"
-
+Jinja2 = ">=2.10.1"
+urllib3 = ">=1.24.2"
+uWSGI = "*"
 
 [dev-packages]
 
