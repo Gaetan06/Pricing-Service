@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "7df04859508d14940f0086018ac87e133fe5379576196f981989013401282739"
+            "sha256": "2f76932de712424ac9d1683423e6e69ce0cd242ab2621d1296f7e1298e9f336b"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -47,6 +47,14 @@
             ],
             "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4'",
             "version": "==7.1.2"
+        },
+        "dnspython": {
+            "hashes": [
+                "sha256:044af09374469c3a39eeea1a146e8cac27daec951f1f1f157b1962fc7cb9d1b7",
+                "sha256:40bb3c24b9d4ec12500f0124288a65df232a3aa749bb0c39734b782873a2544d"
+            ],
+            "index": "pypi",
+            "version": "==2.0.0"
         },
         "flask": {
             "hashes": [
@@ -228,6 +236,13 @@
             ],
             "index": "pypi",
             "version": "==1.26.2"
+        },
+        "uwsgi": {
+            "hashes": [
+                "sha256:faa85e053c0b1be4d5585b0858d3a511d2cd10201802e8676060fd0a109e5869"
+            ],
+            "markers": "sys_platform == 'linux'",
+            "version": "==2.0.19.1"
         },
         "werkzeug": {
             "hashes": [
