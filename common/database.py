@@ -5,10 +5,11 @@ import pymongo
 
 
 class Database:
-    #URI = "mongodb://127.0.0.1:27017/pricing"
-    # URI = "mongodb+srv://gaetan:<password>@pricing-service.nrzua.mongodb.net/<dbname>?retryWrites=true&w=majority"
+    # URI = "mongodb://127.0.0.1:27017/pricing"
     URI = os.environ.get('MONGODB_URI')
-    DATABASE = pymongo.MongoClient(URI).get_database('pricing')
+    DATABASE = pymongo.MongoClient(URI, onnectTimeoutMS=30000, socketTimeoutMS=None, socketKeepAlive=True,
+                                   connect=False,
+                                   maxPoolsize=1).get_database('pricing')
 
     @staticmethod
     def insert(collection: str, data: Dict):
